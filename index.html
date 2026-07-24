@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>James Van Varick — Equity Research</title>
+<meta name="description" content="A track record of equity research pitches by James Van Varick.">
+<style>
+  /* ---------------------------------------------------------------
+     Everything lives in this one file. To edit a blurb, change the
+     text in the <section> blocks below. To add a pitch, copy a
+     <div class="pitch"> block and update the link, dates, and price.
+  --------------------------------------------------------------- */
+
+  :root {
+    --ink:      #1a1a1a;
+    --muted:    #6b6b6b;
+    --line:     #e4e2dd;
+    --paper:    #fbfaf7;
+    --accent:   #1f5c3d;   /* deep green for the "since the call" figures */
+    --accent-bg:#e9f2ec;
+    --link:     #1f5c3d;
+    --serif:    "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --sans:     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+
+  a { color: var(--link); text-underline-offset: 2px; }
+  a:hover { text-decoration: none; }
+
+  /* ---------- Header ---------- */
+  header { margin-bottom: 20px; }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 17px;
+    margin: 0 0 18px;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    font-size: 15px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  .contact a { color: var(--ink); text-decoration: none; }
+  .contact a:hover { color: var(--accent); text-decoration: underline; }
+
+  /* ---------- Intro ---------- */
+  .intro {
+    margin: 28px 0 8px;
+    color: #333;
+  }
+  .intro p { margin: 0 0 14px; }
+
+  /* ---------- Threads ---------- */
+  .thread {
+    padding: 40px 0 8px;
+    border-top: 1px solid var(--line);
+    margin-top: 20px;
+  }
+
+  .thread-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .ticker {
+    font-family: var(--sans);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .blurb { margin: 12px 0 22px; color: #333; }
+  .blurb p { margin: 0 0 14px; }
+  .blurb .label {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  /* ---------- Pitch link cards ---------- */
+  .pitches {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .pitch {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    background: #fff;
+    transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  .pitch:hover {
+    border-color: #c9c6bf;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,.05);
+  }
+
+  .pitch .stage {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .pitch .doc {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .pitch .meta {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .pitch .meta .arrow { color: #b9b6ae; padding: 0 2px; }
+
+  .badge {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-radius: 999px;
+    padding: 2px 10px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--muted);
+  }
+  footer a { color: var(--muted); }
+
+  /* ---------- Small screens ---------- */
+  @media (max-width: 560px) {
+    .wrap { padding: 48px 20px 72px; }
+    h1 { font-size: 32px; }
+    .pitches { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>James Van Varick</h1>
+    <p class="subtitle">Equity research &amp; long-term investing — a record of the calls I've made and how they've aged.</p>
+    <nav class="contact">
+      <a href="mailto:jamesvanvarick@gmail.com">jamesvanvarick@gmail.com</a>
+      <a href="https://www.linkedin.com/in/jamesvanvarick/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <p>This is a working portfolio of my equity research. Each thesis below starts with an
+      original write-up and is followed by an updated report months later — same company,
+      revisited so you can see not just the call, but how it held up as the story played out.</p>
+  </div>
+
+  <!-- =====================  THREAD 1: AAON  ===================== -->
+  <section class="thread">
+    <div class="thread-head">
+      <h2>AAON, Inc.</h2>
+      <span class="ticker">NASDAQ: AAON · HVAC / Building Products</span>
+    </div>
+
+    <div class="blurb">
+      <p><span class="label">The call.</span> I initiated on AAON in August 2025 at $88.29 as a
+        moderate buy. AAON is a Tulsa-based maker of high-performance commercial HVAC, and the
+        thesis centered on its BASX segment riding explosive AI data-center cooling demand — a
+        ~40% three-year sales CAGR and backlog up 58% year-over-year — with the legacy brand
+        supported by decarbonization tailwinds. Base-case DCF pointed to a $107 target.</p>
+      <p><span class="label">What's played out.</span> By the June 2026 update at $127.19, the stock
+        had returned roughly 44% since the initiation. Q1 2026 was the inflection I was looking for:
+        BASX backlog hit $1.62bn (+160% YoY), the AAON brand rebounded +41.6% after a rough 2025,
+        and the three margin headwinds I'd flagged — the A2L refrigerant retooling, the Longview
+        ERP go-live, and Memphis overhead — were working through as transitory. Updated fair value: $166.</p>
+    </div>
+
+    <div class="pitches">
+      <a class="pitch" href="pitches/AAON_Pitch_8.13.2025_Final.pdf" target="_blank" rel="noopener">
+        <div class="stage">Initiation</div>
+        <div class="doc">AAON — Initiating Coverage</div>
+        <div class="meta">Aug 13, 2025 <span class="arrow">·</span> $88.29 <span class="arrow">·</span> Target $107</div>
+      </a>
+      <a class="pitch" href="pitches/AAON_Pitch_6.12.2026_FINAL.pdf" target="_blank" rel="noopener">
+        <div class="stage">Update</div>
+        <div class="doc">AAON — Thesis Update</div>
+        <div class="meta">Jun 12, 2026 <span class="arrow">·</span> $127.19 <span class="arrow">·</span> Fair value $166</div>
+        <span class="badge">+44% since the call</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- =====================  THREAD 2: GSL  ===================== -->
+  <section class="thread">
+    <div class="thread-head">
+      <h2>Global Ship Lease, Inc.</h2>
+      <span class="ticker">NYSE: GSL · Containership Leasing</span>
+    </div>
+
+    <div class="blurb">
+      <p><span class="label">The call.</span> I initiated on GSL in March 2025 at $23.18. It's a
+        containership lessor with a mid-size and post-Panamax fleet levered to the faster-growing
+        non-Mainlane trades. The thesis rested on deep contract cover ($1.9bn of contracted revenue),
+        aggressive deleveraging, and a breakeven far below prevailing charter rates — all while the
+        stock traded near 2.4x earnings. My dividend-discount base case was $68.</p>
+      <p><span class="label">What's played out.</span> By the July 2026 update at $41.31, the stock
+        was up roughly 78%. The balance sheet became the strongest in the peer group — net debt
+        around $222m, about 0.4x EBITDA, the lowest of five peers — with a $2.1bn backlog covering
+        100% of 2026 revenue days and 86% of 2027. The update reframes the thesis around downside
+        protection: coverage holds even under a modeled 50% spot-rate shock, though the fleet is now
+        the oldest in the group at 18.2 years.</p>
+    </div>
+
+    <div class="pitches">
+      <a class="pitch" href="pitches/GSL_Pitch_3.19.2025_FINAL.pdf" target="_blank" rel="noopener">
+        <div class="stage">Initiation</div>
+        <div class="doc">GSL — Initiating Coverage</div>
+        <div class="meta">Mar 18, 2025 <span class="arrow">·</span> $23.18 <span class="arrow">·</span> DDM base $68</div>
+      </a>
+      <a class="pitch" href="pitches/JamesVanVarick_GSL_Pitch_FINAL_7.23.26.pdf" target="_blank" rel="noopener">
+        <div class="stage">Update</div>
+        <div class="doc">GSL — Thesis Update</div>
+        <div class="meta">Jul 21, 2026 <span class="arrow">·</span> $41.31 <span class="arrow">·</span> $2.1bn backlog</div>
+        <span class="badge">+78% since the call</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Written and maintained by James Van Varick. Reports are for illustration of my research
+      process and are not investment advice. Prices reflect the market close noted in each report.</p>
+  </footer>
+
+</div>
+</body>
+</html>
